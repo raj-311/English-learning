@@ -55,7 +55,7 @@ letters.forEach((letter) => {
     letter.addEventListener("click", function () {
         const letterName = letter.textContent.trim();  // অক্ষরের নাম নেওয়া
 
-        const audioPath = `audio/${letterName}.mp3`;   // অডিও ফাইলের পথ
+        const audioPath = `${letterName}.mp3`;   // অডিও ফাইলের পথ
         const audio = new Audio(audioPath);            // নতুন অডিও অবজেক্ট তৈরি করা
         
         audio.play().catch((error) => {
